@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*p1.html code */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    color: #fff; 
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000;
+}
+.animation1{
+    background: #000;
+    animation: bepractical;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /*animation: bepractical 10s infinite; */
+}
+@keyframes bepractical{
+    from{background: pink;}
+    to{background: purple;}
+}
+/*p2.html code*/
+.animation2{
+    background: url(../Images/Asntab.jpg) no-repeat center;
+    background-size: 100%;
+    animation: animation_image 10s infinite;
+}
+@keyframes animation_image {
+    from{background: url(../Images/Asntab.jpg) no-repeat top; color: red;}
+    to{background: url(../Images/circlebg.jpg) no-repeat bottom; color: green;}
+}
+/*p3.html code*/
+.animation3{
+    background: #fc466B;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3{
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: #fc466B;
+    }
+    25%{
+        top: 0px;
+        left: 600px;
+        background-color: lawngreen;
+    }
+    50%{
+        top: 400px;
+        left: 600px;
+        background-color: darkviolet;
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background-color: aquamarine;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: #fc466B;
+    }
+}
